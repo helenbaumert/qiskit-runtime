@@ -1290,10 +1290,10 @@ def get_swap_strategy(
     if backend_name in [
         "ibmq_belem",
         "ibmq_quito",
-        "ibmq_lime",
+        "ibmq_lima",
         "fake_belem",
         "fake_quito",
-        "fake_lime",
+        "fake_lima",
     ]:
         return FiveQubitTeeSwapStrategy(), list(range(5))
 
@@ -1303,6 +1303,7 @@ def get_swap_strategy(
         "ibmq_casablanca",
         "ibm_nairobi",
         "ibmq_jakarta",
+        "ibmq_perth",
     ]:
         return SevenQubitHeavySwapStrategy(n_qubits), list(range(n_qubits))
 
